@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cortador de PDF</title>
+</head>
+<body>
+    <h1>Cortador de PDF</h1>
+    <form method="POST" action="/" enctype="multipart/form-data">
+        <label for="pdf">Escolha o arquivo PDF:</label>
+        <input type="file" name="pdf" id="pdf" required><br>
+
+        <label for="inicio">Página Inicial:</label>
+        <input type="number" name="inicio" id="inicio" required><br>
+
+        <label for="fim">Página Final:</label>
+        <input type="number" name="fim" id="fim" required><br>
+
+        <label for="nome_saida">Nome do PDF de Saída:</label>
+        <input type="text" name="nome_saida" id="nome_saida" required><br>
+
+        <button type="submit">Cortar PDF</button>
+    </form>
+</body>
+</html>
